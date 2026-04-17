@@ -1,5 +1,4 @@
 # IsoformToolsBeachmark
-[![License](https://github.com/wangwencan1314/IsoformToolsBeachmark/blob/mian/Figure1.png)](LICENSE)
 ---
 
 ## 📌 Overview
