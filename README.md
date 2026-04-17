@@ -73,5 +73,8 @@ Gene-level ASTs
 - [SpliZ](docs/SpliZ%20Pipeline.md)
 
 ---
-# 🚀 Metrics
+# 📊 Evaluations
+We benchmarked the performance of all tools across four core dimensions: Detection, Quantification, Differential Splicing Analysis (DSA), and Utility. Below are the key metrics and their definitions.
+1. Detection
+Metrics to evaluate the ability of tools to correctly identify alternative splicing events.
 
