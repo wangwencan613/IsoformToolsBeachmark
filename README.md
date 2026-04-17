@@ -70,5 +70,6 @@ singularity exec --cleanenv --no-home -B /data/bioinf:/data/bioinf isoform_tools
 source /tools/miniforge3/bin/activate
 conda activate rmats
 
----
+```
+# 🚀 Metrics
 
