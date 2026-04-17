@@ -76,25 +76,24 @@ Gene-level ASTs
 # 📊 Evaluations
 We benchmarked the performance of all tools across four core dimensions: Detection, Quantification, Differential Splicing Analysis (DSA), and Utility. Below are the key metrics and their definitions.
 
-### 1. Detection Metrics
+## 1. Detection Metrics
 To evaluate the ability of tools to correctly identify alternative splicing events.
 
 | Metric | Formula | Description |
 |--------|---------|-------------|
 | **Number** | - | Total count of splicing events/genes detected by the tool. |
 | **Similarity (Dice Similarity Coefficient, DSC)** | $$\text{DSC} = \frac{2|A \cap B|}{|A| + |B|}$$ | Measures the overlap between detected events ($A$) and ground truth events ($B$). |
-| **Recall (Sensitivity)** | $$Recall = \frac{TP}{TP + FN}$$ | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Recall (Sensitivity)** | $$\text{Recall} = \frac{TP}{TP + FN}$$ | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 
-2. Quantification
+## 2. Quantification
 To evaluate the accuracy of splicing event quantification.
 
-| Metric                | Formula                                                                 | Description                                                                                                 |
-|-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Correlation (Pearson)** | $`r = \dfrac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2} \cdot \sqrt{\sum(y_i - \bar{y})^2}}`$ | Measures the strength of association between predicted and true values. |
-| **Root Mean Squared Error** | $`\sqrt{\frac{1}{N}\sum_{i=1}^{n}(Y_i - f(x_i))^2}`$    | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
-| **Error Rate**            | $`\text{Error Rate} = \left| \overline{\psi_{\text{scRNA}}} - \overline{\psi_{\text{bulk}}} \right| \times 100`$  | Measures the relative deviation of predictions from ground truth.               |
-| **IQR (Interquartile Range)**            | $`\text{IQR} = Q_3 - Q_1`$ | Measures the spread of quantification results across replicates or conditions. Lower = more consistent.               |
-
+| Metric                | Formula | Description |
+|-----------------------|---------|-------------|
+| **Correlation (Pearson)** | $$r = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2} \cdot \sqrt{\sum(y_i - \bar{y})^2}}$$ | Measures the strength of association between predicted and true values. |
+| **Root Mean Squared Error** | $$\sqrt{\frac{1}{N}\sum_{i=1}^{n}(Y_i - f(x_i))^2}$$ | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
+| **Error Rate** | $$\text{Error Rate} = \left| \overline{\psi_{\text{scRNA}}} - \overline{\psi_{\text{bulk}}} \right| \times 100$$ | Measures the relative deviation of predictions from ground truth. |
+| **IQR (Interquartile Range)** | $$\text{IQR} = Q_3 - Q_1$$ | Measures the spread of quantification results across replicates or conditions. Lower = more consistent. |
 
 3. Differential Splicing Analysis (DSA)
 To evaluate the ability to identify statistically significant splicing differences between conditions.
