@@ -104,12 +104,16 @@ Metrics to evaluate the ability to identify statistically significant splicing d
 | **Recall (Sensitivity)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 | **Precision**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
 | **F1 Score**            | \( F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} \) | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
+|**Specificity**||Proportion of true negative events (TN) among all true negative events (TN + FP). Measures the tool's ability to correctly identify non-events.|
+|**Accuracy**||Overall proportion of correct predictions (TP + TN) among all predictions.|
+|**Matthews Correlation Coefficient**||Balanced correlation coefficient, robust to class imbalance, ranges from -1 to 1.|
+|**Odds Ratio**||Measures the strength of association between predicted differential events and true differential events.|
 
 4. Utility
 Practical metrics for usability in real-world applications.
 
 |Metric	                |Description                                                              |
 |-----------------------|-------------------------------------------------------------------------|
-| Runtime |	Wall-clock time required to process a dataset.|
-| Dependency |	Complexity of software installation and required dependencies (e.g., Conda/Singularity compatibility, external tools).|
-| User-friendliness |	Subjective assessment of documentation quality, command-line interface, error handling, and ease of use.|
+| **Runtime**  |	Wall-clock time required to process a dataset.|
+| **Dependency** |	Complexity of software installation and required dependencies (e.g., Conda/Singularity compatibility, external tools).|
+| **User-friendliness** |	Subjective assessment of documentation quality, command-line interface, error handling, and ease of use.|
