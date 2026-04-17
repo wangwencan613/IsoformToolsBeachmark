@@ -21,22 +21,3 @@ All tools are integrated into a single Conda environment.
 # Create and activate the environment
 conda env create -f environment.yaml
 conda activate isoform_tools
-
-## 📚 Tool Documentation
-
-All 13 tools are documented in the `docs/` directory:
-
-- [BRIE](docs/BRIE%20Pipeline.md)
-- [Expedition](docs/Expedition%20Pipeline.md)
-- [Kallisto](docs/Kallisto%20Pipeline.md)
-- [Leafcutter](docs/Leafcutter%20Pipeline.md)
-- [MAJIQ](docs/MAJIQ%20Pipeline.md)
-- [MARVEL](docs/MARVEL%20Pipeline.md)
-- [Psix](docs/Psix.md)
-- [rMATS](docs/rMATS%20Pipeline.md)
-- [RSEM](docs/RSEM%20Pipeline.md)
-- [SpliZ](docs/SpliZ%20Pipeline.md)
-- [SUPPA](docs/SUPPA%20Pipeline.md)
-- [Whippet](docs/Whippet%20Pipeline.md)
-- [XAEM](docs/XAEM%20Pipeline.md)
----  
