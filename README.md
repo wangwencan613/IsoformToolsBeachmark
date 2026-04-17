@@ -60,6 +60,11 @@ unzip isoform_tools_v2.sif.zip
 
 # Run a tool with Singularity (eg. rMATS)
 singularity exec --cleanenv --no-home -B /data/bioinf:/data/bioinf isoform_tools_v2.sif bash
+- --cleanenv：清空宿主环境变量，保证容器环境纯净
+- --no-home：不挂载宿主home目录，避免配置干扰
+- -B /data/bioinf:/data/bioinf：将宿主机数据目录挂载到容器内
+- isoform_tools_v2.sif：打包好的转录本分析工具容器
+- bash：在容器内启动交互式终端
 
 # Activate conda environment
 source /tools/miniforge3/bin/activate
