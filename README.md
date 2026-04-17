@@ -93,8 +93,8 @@ Metrics to evaluate the accuracy of splicing event quantification.
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **Correlation (Pearson)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Measures the strength of association between predicted and true values. |
-| **Root Mean Squared Error**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Measures the average magnitude of the error between predicted values (y^​i​) and ground truth (yi​). Lower = better.|
-| **Error Rate**            | \( F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} \) | Measures the relative deviation of predictions from ground truth.               |
+| **Root Mean Squared Error**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
+| **Error Rate**            | Error Rate = abs(mean(scRNA$psi) - mean(bulk$psi)) * 100 | Measures the relative deviation of predictions from ground truth.               |
 | **IQR (Interquartile Range)**            | IQR=Q3−Q1 | Measures the spread of quantification results across replicates or conditions. Lower = more consistent.               |
 
 
