@@ -82,7 +82,7 @@ To evaluate the ability of tools to correctly identify alternative splicing even
 | Metric       | Formula                                 | Description                                                                                             |
 |--------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Number**   | -                                       | Total count of splicing events/genes detected by the tool.                                              |
-| **Similarity** | $`Dice = 2TP/(2TP + FP + FN)`$  | Measures overlap between detected events and ground truth events.                                       |
+| **Similarity** | $`\text{Dice} = \dfrac{2 \times |a \cap b|}{|a| + |b|}`$ | Measures overlap between detected events and ground truth events.                                       |
 | **Recall**   | $`Recall = TP/(TP + FN)`$   | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 
 2. Quantification
@@ -90,10 +90,10 @@ To evaluate the accuracy of splicing event quantification.
 
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Correlation (Pearson)** | $`Recall = TP/(TP + FN)`$                                        | Measures the strength of association between predicted and true values. |
+| **Correlation (Pearson)** | $`r = \dfrac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2} \cdot \sqrt{\sum(y_i - \bar{y})^2}}`$ | Measures the strength of association between predicted and true values. |
 | **Root Mean Squared Error** | $`\sqrt{\frac{1}{N}\sum_{i=1}^{n}(Y_i - f(x_i))^2}`$    | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
-| **Error Rate**            | $`Error Rate = abs(mean(predicted$psi) - mean(ground$psi)) * 100`$  | Measures the relative deviation of predictions from ground truth.               |
-| **IQR (Interquartile Range)**            | $`IQR=Q3−Q1`$  | Measures the spread of quantification results across replicates or conditions. Lower = more consistent.               |
+| **Error Rate**            | $`\text{Error Rate} = \left| \overline{\psi}_{\text{scRNA}} - \overline{\psi}_{\text{bulk}} \right| \times 100`$  | Measures the relative deviation of predictions from ground truth.               |
+| **IQR (Interquartile Range)**            | $`\text{IQR} = Q_3 - Q_1`$ | Measures the spread of quantification results across replicates or conditions. Lower = more consistent.               |
 
 
 3. Differential Splicing Analysis (DSA)
@@ -102,12 +102,12 @@ To evaluate the ability to identify statistically significant splicing differenc
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **Recall (Sensitivity)** | $`\text{Recall} = \text{Sensitivity} = \text{TPR} = \dfrac{TP}{TP + FN}`$  | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
-| **Precision**           | $`Precision = TP/(TP + FP) `$                                   | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
+| **Precision**           | $`\text{Precision} = \dfrac{TP}{TP + FP}`$   | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
 | **Specificity**|$`\text{Specificity} = \text{TNR} = \dfrac{TN}{TN + FP}`$ |Proportion of true negative events (TN) among all true negative events (TN + FP). Measures the tool's ability to correctly identify non-events.|
 | **Accuracy**|$`\text{Accuracy} = \dfrac{TP + TN}{TP + FP + TN + FN}`$ |Overall proportion of correct predictions (TP + TN) among all predictions.|
-| **F1 Score**            | $`F1 = 2(Precision * Recall)/(Precision + Recall)`$  | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
+| **F1 Score**            | $`F_1\text{ Score} = 2 \times \dfrac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}`$ | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
 | **Matthews Correlation Coefficient** |$`\text{MCC} = \dfrac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP + FP) \cdot (TP + FN) \cdot (TN + FP) \cdot (TN + FN)}}`$ |Balanced correlation coefficient, robust to class imbalance, ranges from -1 to 1.|
-| **Odds Ratio** |$`OR = (TP * TN)/(FN * FP)`$ |Measures the strength of association between predicted differential events and true differential events.|
+| **Odds Ratio** |$`\text{OR} = \dfrac{TP \times TN}{FN \times FP}`$|Measures the strength of association between predicted differential events and true differential events.|
 
 4. Utility
 Practical metrics for usability in real-world applications.
