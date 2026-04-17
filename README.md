@@ -1,7 +1,6 @@
 <div align="center">
   <h1>IsoformToolsBeachmark</h1>
 </div>
----
 
 ## 📌 Overview
 
