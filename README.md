@@ -83,7 +83,7 @@ To evaluate the ability of tools to correctly identify alternative splicing even
 |--------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Number**   | -                                       | Total count of splicing events/genes detected by the tool.                                              |
 | **Similarity** | $`\text{Dice} = \dfrac{2 \times |a \cap b|}{|a| + |b|}`$ | Measures overlap between detected events and ground truth events.                                       |
-| **Recall**   | $`Recall = TP/(TP + FN)`$   | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Recall**   | $`\text{Recall} = \dfrac{TP}{TP + FN}`$    | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 
 2. Quantification
 To evaluate the accuracy of splicing event quantification.
