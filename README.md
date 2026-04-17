@@ -79,11 +79,11 @@ We benchmarked the performance of all tools across four core dimensions: Detecti
 ### 1. Detection Metrics
 To evaluate the ability of tools to correctly identify alternative splicing events.
 
-| Metric       | Formula                                 | Description                                                                                             |
-|--------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Number**   | -                                       | Total count of splicing events/genes detected by the tool.                                              |
+| Metric | Formula | Description |
+|--------|---------|-------------|
+| **Number** | - | Total count of splicing events/genes detected by the tool. |
 | **Similarity (Dice Similarity Coefficient, DSC)** | $\text{DSC} = \frac{2|X \cap Y|}{|X| + |Y|}$ | Measures the overlap between detected events ($X$) and ground truth events ($Y$). |
-| **Recall**   | $`\text{Recall} = \dfrac{TP}{TP + FN}`$    | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Recall (Sensitivity)** | $Recall = \frac{TP}{TP + FN}$ | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 
 2. Quantification
 To evaluate the accuracy of splicing event quantification.
