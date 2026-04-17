@@ -82,3 +82,27 @@ Metrics to evaluate the ability of tools to correctly identify alternative splic
 | Number of detected events | - | Total count of splicing events/genes detected by the tool. |
 | Similarity | `\\` | Measures overlap between detected events and ground truth events. |
 | Recall | 直接使用 | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+
+2. Quantification
+Metrics to evaluate the accuracy of splicing event quantification.
+| Metric                | Formula                                                                 | Description                                                                                                 |
+|-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **Recall (Sensitivity)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Precision**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
+| **F1 Score**            | \( F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} \) | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
+
+3. Differential Splicing Analysis (DSA)
+Metrics to evaluate the ability to identify statistically significant splicing differences between conditions.
+| Metric                | Formula                                                                 | Description                                                                                                 |
+|-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **Recall (Sensitivity)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Precision**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
+| **F1 Score**            | \( F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} \) | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
+
+4. Utility
+Practical metrics for usability in real-world applications.
+
+|Metric	|Description|
+|Runtime|	Wall-clock time required to process a dataset (e.g., CPU hours, elapsed time).|
+|Dependency|	Complexity of software installation and required dependencies (e.g., Conda/Singularity compatibility, external tools).|
+|User-friendliness|	Subjective assessment of documentation quality, command-line interface, error handling, and ease of use.|
