@@ -8,7 +8,7 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 <table width="100%" border="0">
   <tr>
     <td colspan="2">
-      <img src="https://github.com/user-attachments/assets/03ecb6ed-25b7-4281-8748-9e09f9c0cb46" width="100%">
+      <img src="https://github.com/user-attachments/assets/9c78a89c-5892-4703-b98d-0f8663632644" width="100%">
     </td>
   </tr>
 </table>
