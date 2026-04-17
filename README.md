@@ -77,4 +77,8 @@ Gene-level ASTs
 We benchmarked the performance of all tools across four core dimensions: Detection, Quantification, Differential Splicing Analysis (DSA), and Utility. Below are the key metrics and their definitions.
 1. Detection
 Metrics to evaluate the ability of tools to correctly identify alternative splicing events.
-
+| Metric | Formula | Description |
+|------|----------|------|
+| Number of detected events | - | Total count of splicing events/genes detected by the tool. |
+| Similarity | `\\` | Measures overlap between detected events and ground truth events. |
+| Recall | 直接使用 | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
