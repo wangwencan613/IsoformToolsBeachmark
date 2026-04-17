@@ -43,6 +43,26 @@ Gene-level ASTs
 
 
 # ⚙️ Environment Setup
-All tools, with the exception of MAJIQ, were integrated into a container built with Singularity. Due to its specific requirements, BRIE was packaged separately and stored as isoform_brie.sif.zip. The remaining tools were collectively built and archived as isoform_tools_v2.sif.zip.
+## ⚙️ Environment Setup
+All tools, with the exception of MAJIQ, are provided in Singularity containers to ensure reproducibility and ease of use. Due to specific dependency requirements, BRIE is packaged separately, while all remaining tools are bundled into a single container.
+
+The container files are hosted on Zenodo and can be downloaded using the following links:
+- BRIE container: `isoform_brie.sif.zip`  
+  https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
+- Main tools container: `isoform_tools_v2.sif.zip`  
+  https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
+
+### Usage
+```bash
+# Download containers from Zenodo (replace with actual file URLs)
+wget https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
+wget https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
+
+# Unzip the archives
+unzip isoform_brie.sif.zip
+unzip isoform_tools_v2.sif.zip
+
+# Run a tool with Singularity
+singularity exec isoform_tools_v2.sif python3 -c "import rMATS; print('rMATS environment loaded')"
 
 
