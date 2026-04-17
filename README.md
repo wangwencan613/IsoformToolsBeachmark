@@ -15,15 +15,6 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 </table>
 
 ---
-## ⚙️ Environment Setup
-All tools are integrated into a single Conda environment.
-```bash
-# Create and activate the environment
-conda env create -f environment.yaml
-conda activate isoform_tools
-
-
----
 ## 📚 Tool Documentation
 
 All 13 tools are documented in the `docs/` directory:
@@ -47,5 +38,8 @@ Transcript-level ASTs
 Gene-level ASTs
 - [SpliZ](docs/SpliZ%20Pipeline.md)
 
+
+## ⚙️ Environment Setup
+All tools, with the exception of MAJIQ, were integrated into a container built with Singularity. Due to its specific requirements, BRIE was packaged separately and stored as isoform_brie.sif.zip. The remaining tools were collectively built and archived as isoform_tools_v2.sif.zip.
 
 
