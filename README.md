@@ -15,6 +15,32 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 </table>
 
 ---
+
+## 📚 Tool Documentation
+
+All 13 tools are documented in the `docs/` directory:
+
+Event-level AST tools
+- [BRIE](docs/BRIE%20Pipeline.md)
+- [Expedition](docs/Expedition%20Pipeline.md)
+- [Leafcutter](docs/Leafcutter%20Pipeline.md)
+- [MAJIQ](docs/MAJIQ%20Pipeline.md)
+- [MARVEL](docs/MARVEL%20Pipeline.md)
+- [Psix](docs/Psix.md)
+- [rMATS](docs/rMATS%20Pipeline.md)
+- [SUPPA](docs/SUPPA%20Pipeline.md)
+- [Whippet](docs/Whippet%20Pipeline.md)
+
+Transcript-levelAST tools
+- [Kallisto](docs/Kallisto%20Pipeline.md)
+- [RSEM](docs/RSEM%20Pipeline.md)
+- [XAEM](docs/XAEM%20Pipeline.md)
+
+Gene-level AST tools
+- [SpliZ](docs/SpliZ%20Pipeline.md)
+
+
+
 ## ⚙️ Environment Setup
 All tools are integrated into a single Conda environment.
 ```bash
@@ -22,25 +48,4 @@ All tools are integrated into a single Conda environment.
 conda env create -f environment.yaml
 conda activate isoform_tools
 
-##📚 Tool Documentation
-
-We provide detailed documentation for each evaluated tool, including installation notes, usage examples, and common pitfalls. All Markdown files are stored in the docs/ folder:
-Event-level AST tools
-
-BRIE2
-Expedition
-LeafCutter
-MAJIQ2
-MARVEL
-Psix
-rMATS
-SUPPA2
-Whippet
-Transcript-level quantification tools
-
-kallisto
-RSEM
-XAEM
-Gene-level quantification tool
-
-SpliZ
+---
