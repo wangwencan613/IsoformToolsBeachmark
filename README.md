@@ -16,7 +16,7 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 
 ---
 # ⚙️ Environment Setup
-All tools, with the exception of MAJIQ, are provided in Singularity containers to ensure reproducibility and ease of use. Due to specific dependency requirements, BRIE is packaged separately, while all remaining tools are bundled into a single container.
+All tools, with the exception of MAJIQ2 (requires permission), are provided in Singularity containers to ensure reproducibility and ease of use. Due to specific dependency requirements, BRIE2 is packaged separately, while all remaining tools are bundled into a single container.
 
 The container files are hosted on Zenodo and can be downloaded using the following links:
 - BRIE container: `isoform_brie.sif.zip`  
@@ -34,23 +34,26 @@ wget https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
 unzip isoform_brie.sif.zip
 unzip isoform_tools_v2.sif.zip
 
-# Run a tool with Singularity
-singularity exec isoform_tools_v2.sif python3 -c "import rMATS; print('rMATS environment loaded')"
-```bash
+# Run a tool with Singularity (eg. rMATS)
+singularity exec --cleanenv --no-home -B /data/bioinf:/data/bioinf isoform_tools_v2.sif bash
+# Activate conda environment
+source /tools/miniforge3/bin/activate
+conda activate rmats
 
-## 📚 Tool Documentation
+
+# 📚 Tool Documentation
 
 All 13 tools are documented in the `docs/` directory:
 
 Event-level ASTs
-- [BRIE](docs/BRIE%20Pipeline.md)
+- [BRIE2](docs/BRIE%20Pipeline.md)
 - [Expedition](docs/Expedition%20Pipeline.md)
 - [Leafcutter](docs/Leafcutter%20Pipeline.md)
-- [MAJIQ](docs/MAJIQ%20Pipeline.md)
+- [MAJIQ2](docs/MAJIQ%20Pipeline.md)
 - [MARVEL](docs/MARVEL%20Pipeline.md)
 - [Psix](docs/Psix.md)
 - [rMATS](docs/rMATS%20Pipeline.md)
-- [SUPPA](docs/SUPPA%20Pipeline.md)
+- [SUPPA2](docs/SUPPA%20Pipeline.md)
 - [Whippet](docs/Whippet%20Pipeline.md)
 
 Transcript-level ASTs
