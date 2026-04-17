@@ -77,6 +77,7 @@ Gene-level ASTs
 We benchmarked the performance of all tools across four core dimensions: Detection, Quantification, Differential Splicing Analysis (DSA), and Utility. Below are the key metrics and their definitions.
 1. Detection
 Metrics to evaluate the ability of tools to correctly identify alternative splicing events.
+
 | Metric | Formula | Description |
 |------|----------|------|
 | Number of detected events | - | Total count of splicing events/genes detected by the tool. |
@@ -85,6 +86,7 @@ Metrics to evaluate the ability of tools to correctly identify alternative splic
 
 2. Quantification
 Metrics to evaluate the accuracy of splicing event quantification.
+
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **Recall (Sensitivity)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
@@ -93,6 +95,7 @@ Metrics to evaluate the accuracy of splicing event quantification.
 
 3. Differential Splicing Analysis (DSA)
 Metrics to evaluate the ability to identify statistically significant splicing differences between conditions.
+
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **Recall (Sensitivity)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
