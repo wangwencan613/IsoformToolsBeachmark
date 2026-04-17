@@ -36,9 +36,9 @@ unzip isoform_tools_v2.sif.zip
 
 # Run a tool with Singularity
 singularity exec isoform_tools_v2.sif python3 -c "import rMATS; print('rMATS environment loaded')"
+```bash
 
----
-# 📚 Tool Documentation
+## 📚 Tool Documentation
 
 All 13 tools are documented in the `docs/` directory:
 
