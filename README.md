@@ -101,12 +101,12 @@ To evaluate the ability to identify statistically significant splicing differenc
 
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Recall (Sensitivity)** | $`Recall = TP/(TP + FN) `$                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Recall (Sensitivity)** | $`\text{Recall} = \text{Sensitivity} = \text{TPR} = \dfrac{TP}{TP + FN}`$  | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 | **Precision**           | $`Precision = TP/(TP + FP) `$                                   | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
-| **Specificity**|$`Specificity = TN/(TN + FP)`$ |Proportion of true negative events (TN) among all true negative events (TN + FP). Measures the tool's ability to correctly identify non-events.|
-| **Accuracy**|$`Accuracy = (TP+TN)/(TP + FP + TN + FN)`$ |Overall proportion of correct predictions (TP + TN) among all predictions.|
+| **Specificity**|$`\text{Specificity} = \text{TNR} = \dfrac{TN}{TN + FP}`$ |Proportion of true negative events (TN) among all true negative events (TN + FP). Measures the tool's ability to correctly identify non-events.|
+| **Accuracy**|$`\text{Accuracy} = \dfrac{TP + TN}{TP + FP + TN + FN}`$ |Overall proportion of correct predictions (TP + TN) among all predictions.|
 | **F1 Score**            | $`F1 = 2(Precision * Recall)/(Precision + Recall)`$  | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
-| **Matthews Correlation Coefficient** |$`MCC = (TP * TN-FP * FN)/sqrt((TP+FP) * (TP+FN) * (TN+FP) * (TN+FN))`$ |Balanced correlation coefficient, robust to class imbalance, ranges from -1 to 1.|
+| **Matthews Correlation Coefficient** |$`\text{MCC} = \dfrac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP + FP) \cdot (TP + FN) \cdot (TN + FP) \cdot (TN + FN)}}`$ |Balanced correlation coefficient, robust to class imbalance, ranges from -1 to 1.|
 | **Odds Ratio** |$`OR = (TP * TN)/(FN * FP)`$ |Measures the strength of association between predicted differential events and true differential events.|
 
 4. Utility
