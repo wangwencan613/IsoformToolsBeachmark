@@ -92,9 +92,11 @@ Metrics to evaluate the accuracy of splicing event quantification.
 
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Recall (Sensitivity)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
-| **Precision**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
-| **F1 Score**            | \( F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} \) | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
+| **Correlation (Pearson)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Measures the strength of association between predicted and true values. |
+| **Root Mean Squared Error**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Measures the average magnitude of the error between predicted values (y^​i​) and ground truth (yi​). Lower = better.|
+| **Error Rate**            | \( F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} \) | Measures the relative deviation of predictions from ground truth.               |
+| **IQR (Interquartile Range)**            | IQR=Q3−Q1 | Measures the spread of quantification results across replicates or conditions. Lower = more consistent.               |
+
 
 3. Differential Splicing Analysis (DSA)
 Metrics to evaluate the ability to identify statistically significant splicing differences between conditions.
