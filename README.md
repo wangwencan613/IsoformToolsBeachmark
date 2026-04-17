@@ -21,3 +21,26 @@ All tools are integrated into a single Conda environment.
 # Create and activate the environment
 conda env create -f environment.yaml
 conda activate isoform_tools
+
+##📚 Tool Documentation
+
+We provide detailed documentation for each evaluated tool, including installation notes, usage examples, and common pitfalls. All Markdown files are stored in the docs/ folder:
+Event-level AST tools
+
+BRIE2
+Expedition
+LeafCutter
+MAJIQ2
+MARVEL
+Psix
+rMATS
+SUPPA2
+Whippet
+Transcript-level quantification tools
+
+kallisto
+RSEM
+XAEM
+Gene-level quantification tool
+
+SpliZ
