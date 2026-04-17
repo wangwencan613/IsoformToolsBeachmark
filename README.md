@@ -24,7 +24,7 @@ The container files are hosted on Zenodo and can be downloaded using the followi
 - Main tools container: `isoform_tools_v2.sif.zip`  
   https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
 
-### Usage
+Usage
 ```bash
 # Download containers from Zenodo (replace with actual file URLs)
 wget https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
@@ -37,7 +37,7 @@ unzip isoform_tools_v2.sif.zip
 # Run a tool with Singularity
 singularity exec isoform_tools_v2.sif python3 -c "import rMATS; print('rMATS environment loaded')"
 
-
+---
 # 📚 Tool Documentation
 
 All 13 tools are documented in the `docs/` directory:
