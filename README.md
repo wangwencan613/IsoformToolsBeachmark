@@ -2,7 +2,7 @@
   <h1>IsoformToolsBeachmark</h1>
 </div>
 
-## 📌 Overview
+# 📌 Overview
 
 In this study, we conducted a comprehensive evaluation of alternative splice analysis tools(ASTs), focusing on their performance in splicing detection, splicing quantification, differential splicing, computational utility, and summarize the results into practical, platform-aware recommendations for AST selection.
 
@@ -15,32 +15,6 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 </table>
 
 ---
-# ⚙️ Environment Setup
-All tools, with the exception of MAJIQ2 (requires permission), are provided in Singularity containers to ensure reproducibility and ease of use. Due to specific dependency requirements, BRIE2 is packaged separately, while all remaining tools are bundled into a single container.
-
-The container files are hosted on Zenodo and can be downloaded using the following links:
-- BRIE container: `isoform_brie.sif.zip`  
-  https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
-- Main tools container: `isoform_tools_v2.sif.zip`  
-  https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
-
-Usage
-```bash
-# Download containers from Zenodo (replace with actual file URLs)
-wget https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
-wget https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
-
-# Unzip the archives
-unzip isoform_brie.sif.zip
-unzip isoform_tools_v2.sif.zip
-
-# Run a tool with Singularity (eg. rMATS)
-singularity exec --cleanenv --no-home -B /data/bioinf:/data/bioinf isoform_tools_v2.sif bash
-# Activate conda environment
-source /tools/miniforge3/bin/activate
-conda activate rmats
-
-
 # 📚 Tool Documentation
 
 All 13 tools are documented in the `docs/` directory:
@@ -63,6 +37,34 @@ Transcript-level ASTs
 
 Gene-level ASTs
 - [SpliZ](docs/SpliZ%20Pipeline.md)
+
+
+# ⚙️ Environment Setup
+All tools, with the exception of MAJIQ2 (requires permission), are provided in Singularity containers to ensure reproducibility and ease of use. Due to specific dependency requirements, BRIE2 is packaged separately, while all remaining tools are bundled into a single container.
+
+The container files are hosted on Zenodo and can be downloaded using the following links:
+- BRIE container: `isoform_brie.sif.zip`  
+  https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
+- Main tools container: `isoform_tools_v2.sif.zip`  
+  https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
+
+Usage
+```bash
+# Download containers from Zenodo (replace with actual file URLs)
+wget https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
+wget https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
+
+# Unzip the archives
+unzip isoform_brie.sif.zip
+unzip isoform_tools_v2.sif.zip
+
+# Run a tool with Singularity (eg. rMATS)
+singularity exec --cleanenv --no-home -B /data/bioinf:/data/bioinf isoform_tools_v2.sif bash
+
+# Activate conda environment
+source /tools/miniforge3/bin/activate
+conda activate rmats
+
 
 
 
