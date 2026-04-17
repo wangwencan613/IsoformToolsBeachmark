@@ -92,7 +92,7 @@ To evaluate the accuracy of splicing event quantification.
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **Correlation (Pearson)** | $`Recall = TP/(TP + FN)`$                                        | Measures the strength of association between predicted and true values. |
 | **Root Mean Squared Error**           | $`Precision = TP/(P + FP)`$                                     | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
-| **Error Rate**            | $`Error Rate = abs(mean(scRNA$psi) - mean(bulk$psi)) * 100`$  | Measures the relative deviation of predictions from ground truth.               |
+| **Error Rate**            | $`Error Rate = abs(mean(predicted$psi) - mean(ground$psi)) * 100`$  | Measures the relative deviation of predictions from ground truth.               |
 | **IQR (Interquartile Range)**            | $`IQR=Q3−Q1`$  | Measures the spread of quantification results across replicates or conditions. Lower = more consistent.               |
 
 
