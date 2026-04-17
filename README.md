@@ -81,11 +81,11 @@ Metrics to evaluate the ability of tools to correctly identify alternative splic
 ### 1. Detection Metrics
 To evaluate the ability of tools to correctly identify alternative splicing events.
 
-| Metric      | Formula                                     | Description                                                                                               |
-|-------------|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| **Number**  | -                                           | Total count of splicing events/genes detected by the tool.                                               |
-| **Similarity** | \( \text{Dice} = \frac{2TP}{2TP + FP + FN} \) | Measures overlap between detected events and ground truth events.                                         |
-| **Recall**  | \( \text{Recall} = \frac{TP}{TP + FN} \)     | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| Metric       | Formula                                 | Description                                                                                             |
+|--------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Number**   | -                                       | Total count of splicing events/genes detected by the tool.                                              |
+| **Similarity** | $ \text{Dice} = \frac{2TP}{2TP + FP + FN} $ | Measures overlap between detected events and ground truth events.                                       |
+| **Recall**   | $ \text{Recall} = \frac{TP}{TP + FN} $   | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 
 2. Quantification
 Metrics to evaluate the accuracy of splicing event quantification.
