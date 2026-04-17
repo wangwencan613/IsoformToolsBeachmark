@@ -75,8 +75,6 @@ Gene-level ASTs
 ---
 # 📊 Evaluations
 We benchmarked the performance of all tools across four core dimensions: Detection, Quantification, Differential Splicing Analysis (DSA), and Utility. Below are the key metrics and their definitions.
-1. Detection
-Metrics to evaluate the ability of tools to correctly identify alternative splicing events.
 
 ### 1. Detection Metrics
 To evaluate the ability of tools to correctly identify alternative splicing events.
@@ -84,32 +82,32 @@ To evaluate the ability of tools to correctly identify alternative splicing even
 | Metric       | Formula                                 | Description                                                                                             |
 |--------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Number**   | -                                       | Total count of splicing events/genes detected by the tool.                                              |
-| **Similarity** | $ \text{Dice} = \frac{2TP}{2TP + FP + FN} $ | Measures overlap between detected events and ground truth events.                                       |
-| **Recall**   | $ \text{Recall} = \frac{TP}{TP + FN} $   | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Similarity** | Dice = 2TP/(2TP + FP + FN) | Measures overlap between detected events and ground truth events.                                       |
+| **Recall**   | Recall = TP/(TP + FN)  | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
 
 2. Quantification
-Metrics to evaluate the accuracy of splicing event quantification.
+To evaluate the accuracy of splicing event quantification.
 
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Correlation (Pearson)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Measures the strength of association between predicted and true values. |
-| **Root Mean Squared Error**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
+| **Correlation (Pearson)** | Recall = TP/(TP + FN)                                       | Measures the strength of association between predicted and true values. |
+| **Root Mean Squared Error**           | Precision = TP/(P + FP)                                    | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
 | **Error Rate**            | Error Rate = abs(mean(scRNA$psi) - mean(bulk$psi)) * 100 | Measures the relative deviation of predictions from ground truth.               |
 | **IQR (Interquartile Range)**            | IQR=Q3−Q1 | Measures the spread of quantification results across replicates or conditions. Lower = more consistent.               |
 
 
 3. Differential Splicing Analysis (DSA)
-Metrics to evaluate the ability to identify statistically significant splicing differences between conditions.
+To evaluate the ability to identify statistically significant splicing differences between conditions.
 
 | Metric                | Formula                                                                 | Description                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Recall (Sensitivity)** | \( Recall = \frac{TP}{TP + FN} \)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
-| **Precision**           | \( Precision = \frac{TP}{TP + FP} \)                                    | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
-| **F1 Score**            | \( F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} \) | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
-|**Specificity**||Proportion of true negative events (TN) among all true negative events (TN + FP). Measures the tool's ability to correctly identify non-events.|
-|**Accuracy**||Overall proportion of correct predictions (TP + TN) among all predictions.|
-|**Matthews Correlation Coefficient**||Balanced correlation coefficient, robust to class imbalance, ranges from -1 to 1.|
-|**Odds Ratio**||Measures the strength of association between predicted differential events and true differential events.|
+| **Recall (Sensitivity)** | Recall = TP/(TP + FN)                                       | Proportion of true positive events (TP) among all known true events (TP + FN). Measures the tool's ability to capture all real events. |
+| **Precision**           | Precision = TP/(P + FP)                                    | Proportion of true positive events (TP) among all events predicted by the tool (TP + FP). Measures the tool's ability to avoid false positives. |
+| **Specificity**|Specificity = TN/(TN + FP)|Proportion of true negative events (TN) among all true negative events (TN + FP). Measures the tool's ability to correctly identify non-events.|
+| **Accuracy**|Accuracy = (TP+TN)/(TP + FP + TN + FN)|Overall proportion of correct predictions (TP + TN) among all predictions.|
+| **F1 Score**            | F1 = 2(Precision * Recall)/(Precision + Recall) | Harmonic mean of precision and recall, providing a balanced measure of detection performance.               |
+| **Matthews Correlation Coefficient** |MCC = (TP*TN-FP*FN)/sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN))|Balanced correlation coefficient, robust to class imbalance, ranges from -1 to 1.|
+| **Odds Ratio** |OR = (TP*TN)/(FN*FP)|Measures the strength of association between predicted differential events and true differential events.|
 
 4. Utility
 Practical metrics for usability in real-world applications.
