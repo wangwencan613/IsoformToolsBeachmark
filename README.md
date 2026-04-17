@@ -15,6 +15,12 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 </table>
 
 ---
+## ⚙️ Environment Setup
+All tools are integrated into a single Conda environment.
+```bash
+conda env create -f environment.yaml
+conda activate isoform_tools
+---
 ## 📚 Tool Documentation
 
 All 13 tools are documented in the `docs/` directory:
