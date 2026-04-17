@@ -20,7 +20,7 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 
 All 13 tools are documented in the `docs/` directory:
 
-Event-level AST tools
+Event-level ASTs
 - [BRIE](docs/BRIE%20Pipeline.md)
 - [Expedition](docs/Expedition%20Pipeline.md)
 - [Leafcutter](docs/Leafcutter%20Pipeline.md)
@@ -31,14 +31,13 @@ Event-level AST tools
 - [SUPPA](docs/SUPPA%20Pipeline.md)
 - [Whippet](docs/Whippet%20Pipeline.md)
 
-Transcript-levelAST tools
+Transcript-level ASTs
 - [Kallisto](docs/Kallisto%20Pipeline.md)
 - [RSEM](docs/RSEM%20Pipeline.md)
 - [XAEM](docs/XAEM%20Pipeline.md)
 
-Gene-level AST tools
+Gene-level ASTs
 - [SpliZ](docs/SpliZ%20Pipeline.md)
-
 
 
 ## ⚙️ Environment Setup
@@ -47,5 +46,6 @@ All tools are integrated into a single Conda environment.
 # Create and activate the environment
 conda env create -f environment.yaml
 conda activate isoform_tools
+
 
 ---
