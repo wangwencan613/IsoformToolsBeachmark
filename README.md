@@ -108,7 +108,8 @@ Metrics to evaluate the ability to identify statistically significant splicing d
 4. Utility
 Practical metrics for usability in real-world applications.
 
-|Metric	               |Description                                                     |
+|Metric	                |Description                                                              |
+|-----------------------|-------------------------------------------------------------------------|
 | **Runtime **|	Wall-clock time required to process a dataset.|
 | **Dependency **|	Complexity of software installation and required dependencies (e.g., Conda/Singularity compatibility, external tools).|
 | **User-friendliness **|	Subjective assessment of documentation quality, command-line interface, error handling, and ease of use.|
