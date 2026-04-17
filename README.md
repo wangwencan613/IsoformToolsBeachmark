@@ -15,29 +15,6 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 </table>
 
 ---
-# 📚 Tool Documentation
-
-All 13 tools are documented in the `docs/` directory:
-
-Event-level ASTs
-- [BRIE2](docs/BRIE%20Pipeline.md)
-- [Expedition](docs/Expedition%20Pipeline.md)
-- [Leafcutter](docs/Leafcutter%20Pipeline.md)
-- [MAJIQ2](docs/MAJIQ%20Pipeline.md)
-- [MARVEL](docs/MARVEL%20Pipeline.md)
-- [Psix](docs/Psix.md)
-- [rMATS](docs/rMATS%20Pipeline.md)
-- [SUPPA2](docs/SUPPA%20Pipeline.md)
-- [Whippet](docs/Whippet%20Pipeline.md)
-
-Transcript-level ASTs
-- [Kallisto](docs/Kallisto%20Pipeline.md)
-- [RSEM](docs/RSEM%20Pipeline.md)
-- [XAEM](docs/XAEM%20Pipeline.md)
-
-Gene-level ASTs
-- [SpliZ](docs/SpliZ%20Pipeline.md)
-
 
 # ⚙️ Environment Setup
 All tools, with the exception of MAJIQ2 (requires permission), are provided in Singularity containers to ensure reproducibility and ease of use. Due to specific dependency requirements, BRIE2 is packaged separately, while all remaining tools are bundled into a single container.
@@ -71,5 +48,30 @@ source /tools/miniforge3/bin/activate
 conda activate rmats
 
 ```
+---
+# 📚 Tool Documentation
+
+All 13 tools are documented in the `docs/` directory:
+
+Event-level ASTs
+- [BRIE2](docs/BRIE%20Pipeline.md)
+- [Expedition](docs/Expedition%20Pipeline.md)
+- [Leafcutter](docs/Leafcutter%20Pipeline.md)
+- [MAJIQ2](docs/MAJIQ%20Pipeline.md)
+- [MARVEL](docs/MARVEL%20Pipeline.md)
+- [Psix](docs/Psix.md)
+- [rMATS](docs/rMATS%20Pipeline.md)
+- [SUPPA2](docs/SUPPA%20Pipeline.md)
+- [Whippet](docs/Whippet%20Pipeline.md)
+
+Transcript-level ASTs
+- [Kallisto](docs/Kallisto%20Pipeline.md)
+- [RSEM](docs/RSEM%20Pipeline.md)
+- [XAEM](docs/XAEM%20Pipeline.md)
+
+Gene-level ASTs
+- [SpliZ](docs/SpliZ%20Pipeline.md)
+
+---
 # 🚀 Metrics
 
