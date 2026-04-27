@@ -92,7 +92,7 @@ To evaluate the accuracy of splicing event quantification.
 |-----------------------|---------|-------------|
 | **Correlation (Pearson)** | $$r = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2} \cdot \sqrt{\sum(y_i - \bar{y})^2}}$$ | Measures the strength of association between predicted and true values. |
 | **Root Mean Squared Error** |  $$\text{RMSE} =\sqrt{\frac{1}{N}\sum_{i=1}^{n}(Y_i - f(x_i))^2}$$ | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
-| **Error Rate** |  ```math ER = |PSI(scRNA) - PSI(bulk)| \times 100 ``` | Measures the relative deviation of predictions from ground truth. |
+| **Error Rate** |  $ER = \left| PSI(scRNA) - PSI(bulk) \right| \times 100$  | Measures the relative deviation of predictions from ground truth. |
 | **IQR (Interquartile Range)** | $$\text{IQR} = Q_3 - Q_1$$ | Measures the spread of quantification results across replicates or conditions. Lower = more consistent. |
 
 3. Differential Splicing Analysis (DSA)
