@@ -54,8 +54,8 @@ conda activate rmats
 All 13 tools are documented in the `docs/` directory:
 
 Event-level ASTs
-- [BRIE2](docs/BRIE%20Pipeline.md)
-- [Expedition](docs/Expedition%20Pipeline.md)
+- [BRIE2] https://brie.readthedocs.io/en/latest/
+- [Expedition] http://yeolab.github.io/outrigger/
 - [Leafcutter](docs/Leafcutter%20Pipeline.md)
 - [MAJIQ2](docs/MAJIQ%20Pipeline.md)
 - [MARVEL](docs/MARVEL%20Pipeline.md)
