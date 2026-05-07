@@ -51,8 +51,6 @@ conda activate rmats
 ---
 # 📚 Tool Documentation
 
-All 13 tools are documented in the `docs/` directory:
-
 Event-level ASTs
 - BRIE2
   https://brie.readthedocs.io/en/latest/
