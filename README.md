@@ -62,8 +62,7 @@ Event-level ASTs
 - Leafcutter
   http://davidaknowles.github.io/leafcutter/
 - MAJIQ2
-  https://biociphers.bitbucket.io/majiq/quick.html
-  https://majiq.biociphers.org/app_download/
+  https://biociphers.bitbucket.io/majiq/
 - [MARVEL]
   https://github.com/wenweixiong/MARVEL
 - Psix
