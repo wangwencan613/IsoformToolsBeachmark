@@ -52,9 +52,7 @@ conda activate rmats
 # 📚 Tool Documentation
 
 Event-level ASTs
-- BRIE2
-  https://brie.readthedocs.io/en/latest/
-  https://github.com/huangyh09/briekit/wiki
+- BRIE2<br>https://brie.readthedocs.io/en/latest/<br>https://github.com/huangyh09/briekit/wiki
 - Expedition
   http://yeolab.github.io/outrigger/
 - Leafcutter
