@@ -53,34 +53,22 @@ conda activate rmats
 
 Event-level ASTs
 - BRIE2<br>https://brie.readthedocs.io/en/latest/<br>https://github.com/huangyh09/briekit/wiki
-- Expedition
-  http://yeolab.github.io/outrigger/
-- Leafcutter
-  http://davidaknowles.github.io/leafcutter/
-- MAJIQ2
-  https://biociphers.bitbucket.io/majiq/
-- [MARVEL]
-  https://github.com/wenweixiong/MARVEL
-- Psix
-  https://github.com/lareaulab/psix
-- rMATS
-  https://github.com/Xinglab/rmats-turbo/tree/v4.1.2
-- SUPPA2
-  https://github.com/comprna/SUPPA
-- Whippet
-  https://github.com/timbitz/Whippet.jl
+- Expedition<br>http://yeolab.github.io/outrigger/
+- Leafcutter<br>http://davidaknowles.github.io/leafcutter/
+- MAJIQ2<br>https://biociphers.bitbucket.io/majiq/
+- MARVEL<br>https://github.com/wenweixiong/MARVEL
+- Psix<br>https://github.com/lareaulab/psix
+- rMATS<br>https://github.com/Xinglab/rmats-turbo/tree/v4.1.2
+- SUPPA2<br>https://github.com/comprna/SUPPA
+- Whippet<br>https://github.com/timbitz/Whippet.jl
 
 Transcript-level ASTs
-- Kallisto
-  https://github.com/pachterlab/kallisto
-- RSEM
-  https://github.com/deweylab/RSEM
-- XAEM
-  https://github.com/WenjiangDeng/XAEM
+- Kallisto<br>https://github.com/pachterlab/kallisto
+- RSEM<br>https://github.com/deweylab/RSEM
+- XAEM<br>https://github.com/WenjiangDeng/XAEM
 
 Gene-level ASTs
-- SpliZ
-  https://github.com/salzman-lab/SpliZ/
+- SpliZ<br>https://github.com/salzman-lab/SpliZ/
 
 ---
 # 📊 Evaluations
