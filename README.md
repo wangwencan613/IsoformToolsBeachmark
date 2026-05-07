@@ -54,23 +54,38 @@ conda activate rmats
 All 13 tools are documented in the `docs/` directory:
 
 Event-level ASTs
-- [BRIE2] https://brie.readthedocs.io/en/latest/
-- [Expedition] http://yeolab.github.io/outrigger/
-- [Leafcutter](docs/Leafcutter%20Pipeline.md)
-- [MAJIQ2](docs/MAJIQ%20Pipeline.md)
-- [MARVEL](docs/MARVEL%20Pipeline.md)
-- [Psix](docs/Psix.md)
-- [rMATS](docs/rMATS%20Pipeline.md)
-- [SUPPA2](docs/SUPPA%20Pipeline.md)
-- [Whippet](docs/Whippet%20Pipeline.md)
+- BRIE2
+  https://brie.readthedocs.io/en/latest/
+  https://github.com/huangyh09/briekit/wiki
+- Expedition
+  http://yeolab.github.io/outrigger/
+- Leafcutter
+  http://davidaknowles.github.io/leafcutter/
+- MAJIQ2
+  https://biociphers.bitbucket.io/majiq/quick.html
+  https://majiq.biociphers.org/app_download/
+- [MARVEL]
+  https://github.com/wenweixiong/MARVEL
+- Psix
+  https://github.com/lareaulab/psix
+- rMATS
+  https://github.com/Xinglab/rmats-turbo/tree/v4.1.2
+- SUPPA2
+  https://github.com/comprna/SUPPA
+- Whippet
+  https://github.com/timbitz/Whippet.jl
 
 Transcript-level ASTs
-- [Kallisto](docs/Kallisto%20Pipeline.md)
-- [RSEM](docs/RSEM%20Pipeline.md)
-- [XAEM](docs/XAEM%20Pipeline.md)
+- Kallisto
+  https://github.com/pachterlab/kallisto
+- RSEM
+  https://github.com/deweylab/RSEM
+- XAEM
+  https://github.com/WenjiangDeng/XAEM
 
 Gene-level ASTs
-- [SpliZ](docs/SpliZ%20Pipeline.md)
+- SpliZ
+  https://github.com/salzman-lab/SpliZ/
 
 ---
 # 📊 Evaluations
