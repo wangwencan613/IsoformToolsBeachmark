@@ -33,12 +33,6 @@ wget https://zenodo.org/records/20067728/files/singularity_and_readme.zip?downlo
 
 # Unzip the archives
 unzip isoform_brie.sif.zip
-unzip # Download containers from Zenodo (replace with actual file URLs)
-wget https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
-wget https://zenodo.org/records/20067728/files/singularity_and_readme.zip?download=1
-
-# Unzip the archives
-unzip isoform_brie.sif.zip
 unzip singularity_and_readme.zip
 unzip isoform_tools_v2.sif.zip
 
