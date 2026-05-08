@@ -36,26 +36,25 @@ unzip isoform_brie.sif.zip
 unzip singularity_and_readme.zip
 unzip isoform_tools_v2.sif.zip
 
-# Run a tool with Singularity (eg. rMATS)
+# Run a tool with Singularity (e.g., rMATS)
 singularity exec --cleanenv --no-home -B /data/bioinf:/data/bioinf isoform_tools_v2.sif bash
-# --cleanenv：清空宿主环境变量，保证容器环境纯净
-# --no-home：不挂载宿主home目录，避免配置干扰
-# -B /data/bioinf:/data/bioinf：将宿主机数据目录挂载到容器内
-# isoform_tools_v2.sif：打包好的转录本分析工具容器
-# bash：在容器内启动交互式终端
+# --cleanenv: Clean the host environment variables to ensure a pure container environment
+# --no-home: Do not mount the host's home directory to avoid configuration interference
+# -B /data/bioinf:/data/bioinf: Mount the host data directory to the container
+# isoform_tools_v2.sif: Packaged transcriptome analysis tool container
+# bash: Start an interactive terminal inside the container
 
 # Activate conda environment
 source /tools/miniforge3/bin/activate
 conda activate rmats
 
-
-# Run a tool with Singularity (eg. rMATS)
+# Run a tool with Singularity (e.g., rMATS)
 singularity exec --cleanenv --no-home -B /data/bioinf:/data/bioinf isoform_tools_v2.sif bash
-# --cleanenv：清空宿主环境变量，保证容器环境纯净
-# --no-home：不挂载宿主home目录，避免配置干扰
-# -B /data/bioinf:/data/bioinf：将宿主机数据目录挂载到容器内
-# isoform_tools_v2.sif：打包好的转录本分析工具容器
-# bash：在容器内启动交互式终端
+# --cleanenv: Clean the host environment variables to ensure a pure container environment
+# --no-home: Do not mount the host's home directory to avoid configuration interference
+# -B /data/bioinf:/data/bioinf: Mount the host data directory to the container
+# isoform_tools_v2.sif: Packaged transcriptome analysis tool container
+# bash: Start an interactive terminal inside the container
 
 # Activate conda environment
 source /tools/miniforge3/bin/activate
