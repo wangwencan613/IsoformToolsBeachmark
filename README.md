@@ -20,16 +20,16 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 All tools, with the exception of MAJIQ2 (requires permission), are provided in Singularity containers to ensure reproducibility and ease of use. Due to specific dependency requirements, BRIE2 is packaged separately, while all remaining tools are bundled into a single container.
 
 The container files are hosted on Zenodo and can be downloaded using the following links:
-- BRIE container: `isoform_brie.sif.zip`  
+- BRIE container: 
   https://zenodo.org/records/18885345
-- Main tools container: `isoform_tools_v2.sif.zip`  
+- Main tools container and the readme documentation of all methods:  
   https://zenodo.org/records/20067728
 
 Usage
 ```bash
 # Download containers from Zenodo (replace with actual file URLs)
 wget https://zenodo.org/records/18885345/files/isoform_brie.sif.zip
-wget https://zenodo.org/records/18885345/files/isoform_tools_v2.sif.zip
+wget https://zenodo.org/records/20067728/files/singularity_and_readme.zip?download=1
 
 # Unzip the archives
 unzip isoform_brie.sif.zip
