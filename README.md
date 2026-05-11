@@ -9,7 +9,7 @@ In this study, we conducted a comprehensive evaluation of alternative splice ana
 <table width="100%" border="0">
   <tr>
     <td colspan="2">
-      <img src="https://raw.githubusercontent.com/JYuan-Lab/IsoformToolsBeachmark/main/assets/image/figure1.tif" width="100%">
+      <img src="https://github.com/JYuan-Lab/IsoformToolsBeachmark/blob/main/assets/image/figure1.png" width="100%">
     </td>
   </tr>
 </table>
